@@ -1,0 +1,15 @@
+cargo-features = ["edition2024"]
+
+[package]
+name = "thumbor"
+version = "0.1.0"
+edition = "2021"
+[[bin]]
+name = "sync-api"
+path = "src/main.rs"
+[dependencies]
+prost = "0.12.6"
+base64 = "0.22.1"
+
+[build-dependencies]
+prost-build = "0.12.6"
